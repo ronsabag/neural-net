@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # Activation
 def relu(X):
     return np.maximum(0, X)

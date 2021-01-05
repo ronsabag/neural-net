@@ -1,8 +1,9 @@
 # coding utf-8
+import gzip
+import os
+
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
-import os
-import gzip
 
 
 def batch_generator(X, y, batch_size=32, shuffle=True):

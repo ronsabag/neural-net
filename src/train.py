@@ -1,12 +1,15 @@
 # coding utf-8
 import os
+
 import numpy as np
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
-import utils
+
 import functions
 import neuralnet
-
+import utils
 
 # load dataset
 dataset = utils.mnist_dataset("data")
